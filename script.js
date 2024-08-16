@@ -164,7 +164,7 @@ function goToProject(projectName) {
         case 'chatBot': 
             window.open('https://github.com/abhi-shimpi/ChatBotUsing-GPT.git','_blank');
             break;
-        case 'portfolio ': 
+        case 'portfolio': 
             window.open('https://github.com/abhi-shimpi/PersonalPortfolio.git','_blank');
             break;
 
