@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Abhishek Shimpi Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body id="body">
+
+    <header id="body-header">
+        <div class="nv-li">
+            <div class="hambarger">
+                <i class="fas fa-bars bar">
+                </i>
+            </div>
+            <div id="ham-li">
+                <ul>
+                    <li class="cursor-pointer">
+                        <a href="#"> Home </a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a onclick="scrollBar(this)" data="About"> About </a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a onclick="scrollBar(this)" data="skills"> Skills </a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a onclick="scrollBar(this)" data="exp">Experience</a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a onclick="scrollBar(this)" data="edu">Education</a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a onclick="scrollBar(this)" data="port">Portfolio</a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a onclick="scrollBar(this)" data="cont">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav id="navigation-menu">
+            <div id="bright-dark-theme">
+                <img src="assets/bright.png" alt="bright" id="bright" onclick="changeTheme('dark')" style="display: block;" class="cursor-pointer">
+                <img src="assets/moon.png" alt="moon" id="moon" style="display: none;" onclick="changeTheme('bright')" class="cursor-pointer">
+            </div>
+            <ul class="horizontal-list text-center nav-menu">
+                <li class="cursor-pointer">
+                    <a href="#"> Home </a>
+                </li>
+                <li class="cursor-pointer">
+                    <a onclick="scrollBar(this)" data="About"> About </a>
+                </li>
+                <li class="cursor-pointer">
+                    <a onclick="scrollBar(this)" data="skills"> Skills </a>
+                </li>
+                <li class="cursor-pointer">
+                    <a onclick="scrollBar(this)" data="exp" id="ex">Experience</a>
+                </li>
+                <li class="cursor-pointer">
+                    <a onclick="scrollBar(this)" data="edu">Education</a>
+                </li>
+                <li class="cursor-pointer">
+                    <a onclick="scrollBar(this)" data="port">Portfolio</a>
+                </li>
+                <li class="cursor-pointer">
+                    <a onclick="scrollBar(this)" data="cont">Contact</a>
+                </li>
+            </ul>
+            <div id="resume-download">
+                <a target="_blank" href="assets/Abhishek_shimpi_latest.pdf" download="Abhishek_shimpi_resume">
+                    <span>Resume</span>
+                    <img src="assets/download.png" alt="download-icon">
+                </a>
+            </div>
+        </nav>
+
+        <div id="name-social-container">
+            <div id="my-name-container" class="text-center">
+                <h2>Hello, Myself Abhishek Shimpi</h2>
+                <div id="type-writter"></div>
+            </div>
+            <div class="padding-top-16px">
+                <ul class="horizontal-list text-center social-icons">
+                    <li title="Linkedin">
+                        <a target="_blank" href="https://www.linkedin.com/in/abhishek-shimpi-2261141a1/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li title="GitHub">
+                        <a target="_blank" href="https://github.com/abhi-shimpi/" class="social-img" id="github-icon">
+                            <img src="assets/github.png" alt="github">
+                        </a>
+                    </li>
+                    <li title="Leetcode">
+                        <a target="_blank" href="https://leetcode.com/u/theDynamicVector/" class="social-img">
+                            <img src="assets/leetcode.png" alt="leetcode">
+                        </a>
+                    </li>
+                    <li title="Gmail"> 
+                        <a target="_blank" href="#"  class="social-img" id="gmail-icon">
+                            <img src="assets/gmail.png" alt="gmail">
+                        </a>
+                    </li>
+                    <li title="Coding-Ninjas">
+                        <a target="_blank" href="https://www.naukri.com/code360/profile/AbhishekShimpi" class="social-img">
+                            <img src="assets/coding-ninja.png" alt="coding-ninjas">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+
+        <section id="about" class="theme">
+            <div id="my-image">
+                <img src="assets/my_image.png" alt="my-image">
+            </div>
+
+            <div id="about-para">
+                <p>
+                    Results-driven <span class="text-highlight">software engineer</span> with expertise in web development and proficiency in <span class="text-highlight">Angular</span> and 
+                    <span class="text-highlight">React</span> frontend frameworks. Adept at collaborating with cross-functional teams to design and implement 
+                    robust web applications that <span class="text-highlight">enhance user experiences</span> and drive business growth. Committed to staying updated 
+                    with emerging technologies and <span class="text-highlight">continuously improving coding practices</span> to deliver high-quality software solutions.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="skills" class="theme">
+            <div class="header-skills">
+                <span><i class="fas fa-laptop-code"></i></span>
+                <span>SKILLS</span>
+            </div>
+            <div id="display-skills" class="skill-container">
+                <div class="div">
+                    <div id="eighty-percent" bar-width="85" class="percentage">
+                        <span >React</span>
+                    </div>
+                </div>
+                <div class="div">
+                    <div id="seventy-percent" bar-width="70" class="percentage">
+                        <span>Angular</span>
+                    </div>
+                </div>
+                <div class="div">
+                    <div id="sixty-percent" bar-width="85" class="percentage">
+                        <span>Javascript</span>
+                    </div>
+                </div>
+                <div class="div">
+                    <div id="eighty-percent"  bar-width="65" class="percentage">
+                        <span>HTML</span>
+                    </div>
+                </div>
+                <div class="div">
+                    <div id="seventy-percent"  bar-width="75" class="percentage">
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="div">
+                    <div id="fifty-percent" bar-width="55" class="percentage">
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="div">
+                    <div id="fourty-percent" bar-width="55" class="percentage">
+                        <span>NodeJs</span>
+                    </div>
+                </div>
+                <div class="div">
+                    <div id="fourty-percent" bar-width="55" class="percentage">
+                        <span>ExpressJs</span>
+                    </div>
+                </div>
+                <div class="div">
+                    <div id="fiftyfive-percent" bar-width="55" class="percentage">
+                        <span>MangoDB</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience" class="theme">
+            <div class="header-skills" id="cont-header">
+                <span> <i class="fas fa-briefcase"></i></span>
+                <span>Work Experience</span>
+            </div>
+            <div id="exp-sections">
+                <div class="exps">
+                    <div class="time-sectioins">
+                        <div class="icons">
+                            <img src="assets/Iuaro_logo.jpeg" alt="logo" class="border-radius-4px">
+                        </div>
+                        <div class="titles">
+                            <h4>Software Devp.</h4>
+                            <p class="c-name">Iauro System Pvt. Ltd</p>
+                            <p class="date"> July 2023 - Present</p>
+                        </div>
+                    </div>
+                    <div class="para" id="para-less">
+                        As an Associate Software Engineer at Iauro System Pvt. Ltd Company, I have amassed 1 year of experience working on <span class="text-highlight">Angular and React</span> projects across diverse domains.
+                        In the Telco Domain Project, I contributed to the <span class="text-highlight">frontend architecture, mastered the code flow, and implemented microfrontend structures</span>. My role 
+                        also involved debugging complex issues and creating dynamic data visualizations using Apache ECharts...<span class="link cursor-pointer" onclick="showMore('more')">more</span>
+                    </div>
+                    <div class="para" id="para-more" style="display: none;">
+                        As an Associate Software Engineer at Iauro System Pvt. Ltd Company, I have amassed 1 year of experience working on <span class="text-highlight">Angular and React</span> projects across diverse domains.
+                        In the Telco Domain Project, I contributed to the <span class="text-highlight">frontend architecture, mastered the code flow, and implemented microfrontend structures</span>. My role 
+                        also involved debugging complex issues and creating dynamic data visualizations using Apache ECharts.
+                        I also <span class="text-highlight">led the frontend development</span> for a Udemy-like Course Platform, where I was responsible for implementing new client-requested features. 
+                        This role enhanced my leadership skills as I coordinated with cross-functional teams to ensure timely and effective delivery.
+                        Additionally, I worked on two React projects. In the Banking System Project, I developed secure web applications, integrating <span class="text-highlight">RESTful APIs</span> and managing 
+                        state with Redux. My contributions to the Internal Project Management Tool included building and optimizing tools that improved team productivity and streamlined project workflows...
+                        <span class="link cursor-pointer" onclick="showMore('less')">less</span>
+                    </div>
+                </div>
+                <div class="exps">
+                    <div class="time-sectioins">
+                        <div class="icons">
+                            <img src="assets/Iuaro_logo.jpeg" alt="logo" class="border-radius-4px">
+                        </div>
+                        <div class="titles">
+                            <h4>Software Intern</h4>
+                            <p class="c-name">Iauro System Pvt. Ltd</p>
+                            <p class="date">Jan 2023 - June 2023</p>
+
+                        </div>
+                    </div>
+                    <div class="para">
+                        During my 6-month internship, I gained hands-on experience in web development and deployment. 
+                        The first month focused on <span class="text-highlight">training in HTML, CSS, and JavaScript</span>, followed by <span class="text-highlight">Docker, deployment, and data management</span>. 
+                        I then contributed to an enterprise-level project called Survey Form, similar to Google Forms, where I primarily <span class="text-highlight">developed backend APIs</span> and collaborated on user interface designs based on Figma. 
+                        This experience provided me with a solid foundation in full-stack development and practical insights into professional software deployment.
+                    </div>
+                </div>
+                <div class="exps">
+                    <div class="time-sectioins">
+                        <div class="icons">
+                            <img src="assets/EDC_logo.jpeg" alt="logo">
+                        </div>
+                        <div class="titles">
+                            <h4>Web & Tech Head</h4>
+                            <p class="c-name">GECA EDC</p>
+                            <p class="date"> April 2021 - Jan 2023</p>
+
+                        </div>
+                    </div>
+                    <div class="para">
+                        • During my college internship as Web and Tech Head at the E-cell club, I <span class="text-highlight">led the development of the EDC GECA</span> website.
+                        <br>
+                        • I directed the design and technical implementation, ensuring a user-friendly interface and smooth
+                        functionality for the club’s members and stakeholders.
+                    </div>
+                </div>
+                <div id="divider">
+                    <div id="time-traveller">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="education" class="theme">
+            <div class="header-skills" id="cont-header">
+                <span> <i class="fas fa-graduation-cap"></i></span>
+                <span>Education</span>
+            </div>
+            <div id="exp-sections">
+                <div class="exps">
+                    <div class="time-sectioins">
+                        <div class="icons">
+                            <img class="im1 border-radius-4px"
+                                src="assets/college_logo.jpg"
+                                alt="logo">
+                        </div>
+                        <div class="titles">
+                            <h4>B.Tech</h4>
+                            <p class="c-name">GEC,Aurangabad</p>
+                            <h5 class="date">Augast 2019 - June 2023</h5>
+
+                        </div>
+                    </div>
+                    <div class="para">
+                        I earned my B.Tech in Computer Science with a CGPA of 8.8. My final year project was an <span class="text-highlight">Online Book Rental System</span>, 
+                        where I applied my skills in software development and database management. In addition to my academic achievements, 
+                        I actively participated in cultural programs and was involved in the <span class="text-highlight"> Entrepreneurship Development Cell (EDC)</span>, where 
+                        I developed leadership and project management skills. This blend of technical knowledge and extracurricular involvement shaped a well-rounded educational experience.
+                    </div>
+                </div>
+                <div class="exps">
+                    <div class="time-sectioins">
+                        <div class="icons">
+                            <img class="im1 border-radius-4px"
+                                src="assets/college_logo.jpg"
+                                alt="logo">
+                        </div>
+                        <div class="titles">
+                            <h4>HSC Science</h4>
+                            <p class="c-name">Pratap College</p>
+                            <p class="date">Jan 2016 - April 2018</p>
+
+                        </div>
+                    </div>
+                    <div class="para">
+                        I completed my <span class="text-highlight">HSC</span> with a score of <span class="text-highlight">84%</span>, excelling in the <span class="text-highlight">MHT CET with a 99.10</span> percentile, ranking within the <span class="text-highlight">top 1000 </span>
+                        across Maharashtra. This strong academic performance laid a solid foundation for my further studies in engineering and 
+                        fueled my passion for technology.
+                    </div>
+                </div>
+                <div class="exps">
+                    <div class="time-sectioins">
+                        <div class="icons">
+                            <img class="im1 border-radius-4px"
+                                src="assets/college_logo.jpg"
+                                alt="logo">
+                        </div>
+                        <div class="titles">
+                            <h4>SSC</h4>
+                            <p class="c-name">Sane Guruji Vidyalay</p>
+                            <p class="date">Jan 2015 - Jan 2016</p>
+
+                        </div>
+                    </div>
+                    <div class="para">
+                        Done my SSC with 93.20%.
+                    </div>
+                </div>
+                <div id="divider">
+                    <div id="time-traveller">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="portfolio" class="theme">
+            <div class="header-skills">
+                <span> <i class="fas fa-th-list"></i></span>
+                <span>Portfolio</span>
+            </div>
+            <div id="display-portfolio">
+                <div id="first-image" class="cursor-pointer" onclick="goToProject('netflix')">
+                </div>
+                <div id="second-image" class="cursor-pointer" onclick="goToProject('expenseTracker')">
+                </div>
+                <div id="third-image">
+                </div>
+                <div id="fourth-image">
+                </div>
+                <div id="fifth-image">
+                </div>
+                <div id="sixth-image">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contact">
+            <div class="header-skills" id="cont-header">
+                <span> <i class="far fa-id-card"></i></span>
+                <span>Contact</span>
+            </div>
+            <div id="main-form">
+                <div id="form">
+                    <form action="">
+                        <input type="text" name="Name" required placeholder="Your Name">
+                        <input type="text" name="Email" required placeholder="Your Email">
+                        <textarea name="" id="" cols="30" rows="3" placeholder="Message" name="meassage"></textarea>
+                        <button>SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="address">
+                    <h4>Get In touch</h4>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                    <h4>My Address</h4>
+                    <p><i class="fas fa-map-marker-alt"></i><span>Delhi, India</span></p>
+                    <p><i class="fas fa-mobile-alt"></i><span>9999999999</span></p>
+                    <p><i class="far fa-envelope"></i><span>myemail@gmail.com</span></p>
+                </div>
+            </div>
+            <div id="icons">
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="footer-section">
+                Made by <a target="_blank" href="mailto:abhishekshimpi23@gmail.com">@AbhishekShimpi</a> with ❤️
+            </div>
+
+            <div id="up-arrow">
+                <a href="#">&#x2191;</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
