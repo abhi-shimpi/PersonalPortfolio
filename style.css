@@ -19,6 +19,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     padding-top: 1.2rem;
+    position: relative;
 }
 /* hamburger section */
 #body-header .hambarger{
@@ -32,32 +33,27 @@ body {
         color: white;
     }
 #body-header #ham-li{
-    height: 12rem;
-    width: 8rem;
-    font-size: 1rem;
-    background-color: #828470;
+    height: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    background-color: white;
     display: none; 
+    border-radius: 4px;
+    padding:.5rem;
     box-shadow: 1px 0px 2px 2px #535547;
    }
 #body-header #ham-li ul{
         margin-left: -2rem;
    }
-#body-header #ham-li li{
+#body-header #ham-li ul>li{
        list-style: none;
-       padding:.2rem;
+       padding-bottom:.8rem;
    }
 #body-header #ham-li a{
        text-decoration: none;
-       color: white;
        font-size: 1rem;
        font-weight:20px;
    }
-#body-header .nv-li:hover #ham-li{
-    display: block;   
-    position: absolute;
-    right:3%; 
-    top: 6%;   
-}
 /* Horizontal Lists */
 #navigation-menu {
     display: flex;
@@ -100,7 +96,7 @@ body {
 }
 
 #resume-download a{
-    padding: .5em .7em;
+    padding: .4rem .6rem;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -110,7 +106,7 @@ body {
     gap: .7em;
     text-decoration: none;
     color: black;
-    font-size: .4em;
+    font-size: 1rem;
 }
 
 #bright-dark-theme {
@@ -124,8 +120,8 @@ body {
 }
 
 #bright-dark-theme img {
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.9rem;
+    height: 1.9rem;
 }
 /* Name and Social Icons*/
 
@@ -139,7 +135,7 @@ body {
     letter-spacing: 0.1rem;
     color: var(--section-blue);
     width: fit-content;
-    font-weight: bold;
+    font-weight: 900;
     background: linear-gradient(90deg, var(--section-blue),chocolate);
     background-size: 200% auto;
     background-clip: text;
@@ -420,6 +416,7 @@ section:nth-child(2n+1)
 }
 .titles h4{
    color:var(--section-blue) ;
+   font-size: 1.8rem;
 }
 .titles .c-name{
     font-size: 1.5rem;
@@ -467,7 +464,6 @@ section:nth-child(2n+1)
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-size: contain;
     background-repeat: no-repeat;  
     font-size: 40px;
     color: white;
@@ -484,17 +480,21 @@ section:nth-child(2n+1)
     background-size: cover;
 }
 #third-image{
-    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000029_1550237386_project.jpeg');
+    background-image: url('assets/to-do-img.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 #fourth-image{
-    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000027_1550237355_project_3.png');
+    background-image: url('assets/chat-bot-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #fifth-image{
-    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png');
+    background-image: url('assets/my-portfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#sixth-image{
-    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000028_1550237365_tree.jpeg');
-}
+
 #display-portfolio >div:hover {
     box-shadow: 0px 0px 20px 1px lightskyblue;
    
@@ -520,12 +520,43 @@ section:nth-child(2n+1)
     font-weight: 700;
 }
 
+#display-portfolio > #third-image:hover::after {
+    content: "To do App";
+    background-color:rgba(12, 11, 11, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    font-weight: 700;
+}
+
+
+#display-portfolio > #fourth-image:hover::after {
+    content: "Chat Bot Using GPT App";
+    background-color:rgba(12, 11, 11, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    font-weight: 700;
+}
+
+#display-portfolio > #fifth-image:hover::after {
+    content: "My Portfolio Webpage";
+    background-color:rgba(12, 11, 11, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    font-weight: 700;
+}
+
 /* Contact */
 #contact{
     /* margin-top: 4rem; */
     background-image: linear-gradient(to top right,var(--section-blue) 5%,#403066 50%);
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 #contact #cont-header{
     color: white;
@@ -642,7 +673,7 @@ input, select, textarea{
         left: -21.0% !important;
     }
     #my-image img{
-        margin-top: 3vh;
+        margin-top: 2vh;
     }
     #contact #main-form{
         flex-direction: column !important;
@@ -670,8 +701,14 @@ input, select, textarea{
         width: 90%;  
     }
     #my-image img{
-        margin-top: 3vh;
+        margin-top: 2vh;
     }
+}
+@media screen and (min-width:568px ) and (max-width:717px){
+    #divider {
+        left: 10%;
+        height: 64.5%;
+       }    
 }
 @media screen and (max-width:568px){
     html{
@@ -696,8 +733,26 @@ input, select, textarea{
     }
     #body-header .hambarger{
        display: block;
+       padding-top: 1.5rem;
    }
+   #divider {
+    left: 7%;
+    height: 64.5%;
+   }
+}
 
+@media screen and (min-width:500px ) and (max-width:567px){
+    #divider {
+        left: 7%;
+        height: 64.5%;
+       }    
+}
+
+@media screen and (max-width:500px){
+    #divider {
+        left: 8.3%;
+        height: 65.5%;
+       }    
 }
 
 /* Global CSS */

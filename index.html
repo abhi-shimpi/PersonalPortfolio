@@ -4,6 +4,7 @@
 <head>
     <title>Abhishek Shimpi Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/webpage-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -15,14 +16,14 @@
 
     <header id="body-header">
         <div class="nv-li">
-            <div class="hambarger">
+            <div class="hambarger cursor-pointer" id="hambarger-icon" onclick="showMenu()">
                 <i class="fas fa-bars bar">
                 </i>
             </div>
             <div id="ham-li">
                 <ul>
                     <li class="cursor-pointer">
-                        <a href="#"> Home </a>
+                        <a> Home </a>
                     </li>
                     <li class="cursor-pointer">
                         <a onclick="scrollBar(this)" data="About"> About </a>
@@ -357,13 +358,11 @@
                 </div>
                 <div id="second-image" class="cursor-pointer" onclick="goToProject('expenseTracker')">
                 </div>
-                <div id="third-image">
+                <div id="third-image"  class="cursor-pointer" onclick="goToProject('toDo')">
                 </div>
-                <div id="fourth-image">
+                <div id="fourth-image" class="cursor-pointer" onclick="goToProject('chatBot')">
                 </div>
-                <div id="fifth-image">
-                </div>
-                <div id="sixth-image">
+                <div id="fifth-image" class="cursor-pointer" onclick="goToProject('portfolio')">
                 </div>
             </div>
         </section>
@@ -386,44 +385,42 @@
                 </div>
                 <div id="address">
                     <h4>Get In touch</h4>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>You can connect me on Linkedin.Just send me connection request by adding meassage in Note.</p>
 
                     <h4>My Address</h4>
-                    <p><i class="fas fa-map-marker-alt"></i><span>Delhi, India</span></p>
-                    <p><i class="fas fa-mobile-alt"></i><span>9999999999</span></p>
-                    <p><i class="far fa-envelope"></i><span>myemail@gmail.com</span></p>
+                    <p><i class="fas fa-map-marker-alt"></i><span>Pune, India</span></p>
+                    <p><i class="fas fa-mobile-alt"></i><span>7709155477</span></p>
+                    <p><i class="far fa-envelope"></i><span>abhishekshimpi23@gmail.com</span></p>
                 </div>
             </div>
-            <div id="icons">
+            <div id="icons" class="padding-top-16px">
                 <ul class="horizontal-list text-center social-icons">
-                    <li>
-                        <a href="#">
+                    <li title="Linkedin">
+                        <a target="_blank" href="https://www.linkedin.com/in/abhishek-shimpi-2261141a1/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-stack-overflow"></i>
+                    <li title="GitHub">
+                        <a target="_blank" href="https://github.com/abhi-shimpi/" class="social-img" id="github-icon">
+                            <img src="assets/github.png" alt="github">
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-google-plus-g"></i>
+                    <li title="Leetcode">
+                        <a target="_blank" href="https://leetcode.com/u/theDynamicVector/" class="social-img">
+                            <img src="assets/leetcode.png" alt="leetcode">
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
+                    <li title="Gmail"> 
+                        <a target="_blank" href="#"  class="social-img" id="gmail-icon">
+                            <img src="assets/gmail.png" alt="gmail">
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-quora"></i>
+                    <li title="Coding-Ninjas">
+                        <a target="_blank" href="https://www.naukri.com/code360/profile/AbhishekShimpi" class="social-img">
+                            <img src="assets/coding-ninja.png" alt="coding-ninjas">
                         </a>
                     </li>
                 </ul>
-
             </div>
             <div id="footer-section">
                 Made by <a target="_blank" href="mailto:abhishekshimpi23@gmail.com">@AbhishekShimpi</a> with ❤️

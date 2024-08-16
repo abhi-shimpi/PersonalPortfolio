@@ -1,89 +1,11 @@
-/*
-function scrollBar(this1) {
-    console.log("hey")
 
-
-    var targetPos;
-    var sectionId =this1.getAttribute('data');
-    
-    console.log(sectionId);
-
-    if(sectionId == "About"){
-        targetPos = 434;
-    }else if(sectionId == "skills"){
-        targetPos = 885;
-    }
-    else if(sectionId == "exp"){
-        targetPos = 1340;
-    }
-    else if(sectionId == "edu"){
-        targetPos = 2350;
-    }
-    else if(sectionId == "port"){
-        targetPos = 3365;
-    }
-    else if(sectionId == "cont"){
-        targetPos = 4260;
-    }
-
-
-    var id = setInterval(ab, 100)
-    function ab() {
-
-        if (window.scrollY <=targetPos) {
-            window.scrollBy(0, 150);
-            
-        }
-        else{
-            clearInterval(id);   
-        }
-
-    }
-   
+function showMenu() {
+    const hambergerIcon = document.getElementById('ham-li');
+    hambergerIcon.style.display = hambergerIcon.style.display == 'block' ? 'none' : 'block';
+    hambergerIcon.style.position = 'absolute';
+    hambergerIcon.style.top = '4em';
+    hambergerIcon.style.right = '5%';
 }
-
-function scrollBar2(this1) {
-    console.log("hey")
-
-    var targetPos;
-    var sectionId =this1.getAttribute('data');
-    console.log(sectionId);
-
-    if(sectionId == "About"){
-        targetPos = 341;
-    }else if(sectionId == "skills"){
-        targetPos = 1140.80;
-    }
-    else if(sectionId == "exp"){
-        targetPos = 1940.80;
-    }
-    else if(sectionId == "edu"){
-        targetPos = 2940.80;
-    }
-    else if(sectionId == "port"){
-        targetPos =3940.80;
-    }
-    else if(sectionId == "cont"){
-        targetPos = 5640.79;
-    }
-
-
-    var id = setInterval(ab, 100)
-    function ab() {
-
-        if (window.scrollY <=targetPos) {
-            window.scrollBy(0, 150);
-            
-        }
-        else{
-            clearInterval(id);  
-            console.log(scro) 
-        }
-
-    }
-   
-}
-*/
 
 // Type Write Effect
 const text = "<I'm a web developer>";
@@ -123,18 +45,15 @@ function scrollBar(this1) {
 
     var sectionId = this1.textContent.trim().toLowerCase();
 
-    console.log(this1.data)
     var targetSectionId = document.getElementById(sectionId);
-
-
-    //console.log(coordinates.top);
+    const hambergerIcon = document.getElementById('ham-li');
+    hambergerIcon.style.display = 'none'
 
     var id = setInterval(function () {
         var coordinates = targetSectionId.getBoundingClientRect();
 
         if (coordinates.top <= 100) {
             clearInterval(id);
-            console.log(coordinates.top)
             return;
         }
         window.scrollBy(0, 50)
@@ -153,7 +72,6 @@ function changeTheme(themeType) {
     if(themeType === 'dark') {
         let i = 0;
         for(let theme of sections) {
-            console.log(theme);
             if(i%2 == 0)theme.style.backgroundColor = 'black';
             else {
                 theme.style.backgroundColor = '#4d4a4a';
@@ -167,7 +85,6 @@ function changeTheme(themeType) {
     } else {
         let i = 0;
         for(let theme of sections) {
-            console.log(theme);
             if(i%2 == 0)theme.style.backgroundColor = 'white';
             else {
                 theme.style.backgroundColor = 'rgb(236, 232, 232)';
@@ -218,7 +135,6 @@ function scrollCheck() {
     for (let bar of skillBars)
     {
         let coordinates = bar.getBoundingClientRect();
-        //console.log(coordinates.top)
         if((bar.getAttribute('data-visited')=='false') && (coordinates.top <= window.innerHeight))
         {
            bar.setAttribute('data-visited',true);
@@ -241,6 +157,15 @@ function goToProject(projectName) {
             break;
         case 'expenseTracker': 
             window.open('https://expensetracker-jubb.onrender.com','_blank');
+            break;
+        case 'toDo': 
+            window.open('https://github.com/abhi-shimpi/TO-Do.git','_blank');
+            break;
+        case 'chatBot': 
+            window.open('https://github.com/abhi-shimpi/ChatBotUsing-GPT.git','_blank');
+            break;
+        case 'portfolio ': 
+            window.open('https://github.com/abhi-shimpi/PersonalPortfolio.git','_blank');
             break;
 
     }
