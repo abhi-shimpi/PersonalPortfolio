@@ -8,7 +8,7 @@ function showMenu() {
 }
 
 // Type Write Effect
-const text = "<I'm a web developer>";
+const text = "<I'm a web developer/>";
 let index = 0;
 const speed = 200;
 
